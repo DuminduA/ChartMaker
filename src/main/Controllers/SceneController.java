@@ -12,10 +12,11 @@ public class SceneController {
 
 
     public void graph() throws IOException {
-        Stage primaryStage = Main.stage;
-        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("src/graphs.fxml"));
+        Stage primaryStage = new Stage();
+        Controller.ControllerStage = primaryStage;
+        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("main/Resources/graphs.fxml"));
         Scene scene = new Scene(root);
-        primaryStage.setTitle("Coprighted to Dumindu Akalanka");
+        primaryStage.setTitle("Chart Maker");
         primaryStage.setScene(scene);
         primaryStage.show();
     }

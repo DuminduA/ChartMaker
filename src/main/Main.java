@@ -18,7 +18,7 @@ public class Main extends Application {
         Main.stage = primaryStage;
         Parent root = FXMLLoader.load(getClass().getResource("Resources/Home.fxml"));
 //        primaryStage.initStyle(StageStyle.UNDECORATED);
-        primaryStage.setTitle("Copyrighted to Dumindu Akalanka");
+        primaryStage.setTitle("Chart Maker");
         Scene scene = new Scene(root);
         primaryStage.setScene(scene);
         primaryStage.show();
